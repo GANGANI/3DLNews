@@ -1,4 +1,4 @@
-3DLNews: A Three-decade Dataset of US Local News Articles
+# 3DLNews: A Three-decade Dataset of US Local News Articles
 
 ```
 @article{gangani_nwala_3dlnews,
