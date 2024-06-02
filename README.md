@@ -5,10 +5,14 @@ We present 3DLNews, a novel dataset with local news articles from the United Sta
 ### Key Features
 - **Time Span:** Articles from 1996 to 2024, offering a nearly three-decade perspective on local news.
 - **Geographical Coverage:** Nearly 1 million URLs sourced from more than 10,000 local news outlets across all 50 states.
-- **Data Sources:** Articles collected through advanced web scraping techniques from Google search results and Twitter, capturing trending news articles over the years.
 - **Metadata Enrichment**: The dataset includes relevant metadata to provide additional context for analysis.
-Potential Applications.
-
+  
+### Potential Applications.
+- Exploring the Nationalization of Local News
+- Media Bias Analysis
+- Studying US Local News Deserts
+- Community Understanding, Trend Analysis and Prediction
+  
 To cite, kindly use:
 
 ```
@@ -27,3 +31,62 @@ To cite, kindly use:
   git clone https://github.com/GANGANI/3DLNews.git
   ```
 - The structure of the data is as follows.
+  ```
+  ├── Google
+  │   ├── 1-Newspapers
+  │   │   ├── filtered_state
+  │   │   │   ├── AK
+  │   │   │   │   └── preprocessed_google_newspaper_AK.jsonl.gz
+  │   │   │   └── AL
+  │   │   │       └── preprocessed_google_newspaper_AL.jsonl.gz
+  │   │   ├── HTML
+  │   │   │   ├── AK
+  │   │   │   │   ├── 1996
+  │   │   │   │   │   ├── 0106eb41fcb93351d3bba81a67ecf487.html
+  │   │   │   │   │   ├── 024b602f2a0c7edf53ee2a1b0228bfc5.html
+  │   │   │   │   │   ├── -------------------------------------  
+  │   │   │   │   ├── ----
+  │   │   │   │   ├── 2024
+  │   │   │   │   │   ├── 0106eb41fcb93351d3bba81a67ecf487.html
+  │   │   │   │   │   ├── 024b602f2a0c7edf53ee2a1b0228bfc5.html
+  │   │   │   │   │   ├── -------------------------------------  
+  │   │   │   ├── ---
+  │   │   ├── preprocessed_state
+  │   │   │   ├── AK
+          │   │   ├── twitter_broadcast_AK_2009.jsonl.gz
+          │   │   ├── twitter_broadcast_AK_2010.jsonl.gz
+
+
+**Table: US local news media dataset**
+
+| Media Type | Number of websites |
+|------------|---------------------|
+| Newspapers | 9,441               |
+| Radio      | 2,449               |
+| Broadcast  | 1,310               |
+| TV         | 886                 |
+| **Total**  | **14,086**          |
+
+
+
+**Table: 3DLNews-raw: Number of URLs (non-news URLs included)**
+
+| Type        | Google        | Twitter       | Total         |
+|-------------|---------------|---------------|---------------|
+| Newspapers  | 853,543       | 199,996       | 1,053,539     |
+| Radio       | 140,401       | 102,494       | 242,895       |
+| TV          | 99,001        | 66,880        | 165,881       |
+| Broadcast   | 164,028       | 100,119       | 264,147       |
+| **Total**   | **1,256,973** | **469,489**   | **1,726,462** |
+
+
+**Table: 3DLNews: Number of news article URLs (non-news URLs excluded)**
+
+| Type        | Google    | Twitter   | Total     |
+|-------------|-----------|-----------|-----------|
+| Newspapers  | 502,530   | 64,886    | 618,686   |
+| Radio       | 52,925    | 555       | 64,658    |
+| TV          | 62,727    | 22,675    | 105,008   |
+| Broadcast   | 110,494   | 7,783     | 130,144   |
+| **Total**   | **728,676** | **95,899** | **824,575** |
+
