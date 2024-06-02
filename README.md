@@ -1,6 +1,6 @@
 # 3DLNews: A Three-decade Dataset of US Local News Articles
 
-Local news serves as a vital source of information for communities, reflecting the diverse array of events, issues, and perspectives that shape society at the grassroots level. Despite its significance, comprehensive datasets capturing the breadth and depth of local news coverage in the United States have been relatively scarce. The 3DLNews dataset addresses this gap by providing a rich, extensive, and meticulously curated collection of local news articles.
+We present 3DLNews, a novel dataset with local news articles from the United States spanning the period from 1996 to 2024. It contains almost 1 million URLs (and HTML text) from over 14,000 local newspapers, TV, and radio stations across all 50 states, and provides a broad snapshot of the US local news landscape. The dataset was collected by scraping Google and Twitter search results. We employed a multi-step filtering process to remove non-news article links and enriched the dataset with metadata such as the names and geo-coordinates of the source news media organizations, article publication dates, etc. Furthermore, we demonstrated the utility of 3DLNews by outlining four applications.
 
 ### Key Features
 - **Time Span:** Articles from 1996 to 2024, offering a nearly three-decade perspective on local news.
