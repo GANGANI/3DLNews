@@ -34,11 +34,33 @@ To cite, kindly use:
   ```
   ├── Google
   │   ├── 1-Newspapers
+  │   │   ├── state
+  │   │   │   ├── AK
+  │   |   │   |   ├── google_newspaper_AK_2006.jsonl.gz
+  │   |   │   |   ├── google_newspaper_AK_2007.jsonl.gz
+  │   |   │   |   ├── -------------------------------
+  │   │   │   ├── --
+  │   │   │   └── WY
+  │   |   │       ├── google_newspaper_AK_2006.jsonl.gz
+  │   |   │       ├── google_newspaper_AK_2007.jsonl.gz
+  │   |   │       ├── -------------------------------
+  │   │   ├── preprocessed_stat
+  │   │   │   ├── AK
+  │   |   │   |   ├── preprocessed_google_newspaper_AK_2006.jsonl.gz
+  │   |   │   |   ├── preprocessed_google_newspaper_AK_2007.jsonl.gz
+  │   |   │   |   ├── -------------------------------
+  │   │   │   ├── --
+  │   │   │   └── WY
+  │   |   │       ├── preprocessed_google_newspaper_AK_2006.jsonl.gz
+  │   |   │       ├── preprocessed_google_newspaper_AK_2007.jsonl.gz
+  │   |   │       ├── -------------------------------
   │   │   ├── filtered_state
   │   │   │   ├── AK
   │   │   │   │   └── preprocessed_google_newspaper_AK.jsonl.gz
   │   │   │   └── AL
-  │   │   │       └── preprocessed_google_newspaper_AL.jsonl.gz
+  │   │   │   │    └── preprocessed_google_newspaper_AL.jsonl.gz
+  │   │   │   ├── --
+  │   │   │   │   └── -----------------------------------------
   │   │   ├── HTML
   │   │   │   ├── AK
   │   │   │   │   ├── 1996
@@ -46,17 +68,20 @@ To cite, kindly use:
   │   │   │   │   │   ├── 024b602f2a0c7edf53ee2a1b0228bfc5.html
   │   │   │   │   │   ├── -------------------------------------  
   │   │   │   │   ├── ----
-  │   │   │   │   ├── 2024
-  │   │   │   │   │   ├── 0106eb41fcb93351d3bba81a67ecf487.html
-  │   │   │   │   │   ├── 024b602f2a0c7edf53ee2a1b0228bfc5.html
-  │   │   │   │   │   ├── -------------------------------------  
-  │   │   │   ├── ---
-  │   │   ├── preprocessed_state
-  │   │   │   ├── AK
-          │   │   ├── twitter_broadcast_AK_2009.jsonl.gz
-          │   │   ├── twitter_broadcast_AK_2010.jsonl.gz
-
-
+  │   │   │   │   └──2024
+  │   │   │   │       ├── 0106eb41fcb93351d3bba81a67ecf487.html
+  │   │   │   │       ├── 024b602f2a0c7edf53ee2a1b0228bfc5.html
+  │   │   │   │       ├── -------------------------------------  
+  │   ├── 2-Radio
+  │   ├── 3-TV
+  │   └── 4-Broadcast
+  └── Google
+      ├── 1-Newspapers
+      ├── 2-Radio
+      ├── 3-TV
+      └── 4-Broadcast
+  ```
+  
 **Table: US local news media dataset**
 
 | Media Type | Number of websites |
