@@ -1,6 +1,6 @@
 # 3DLNews: A Three-decade Dataset of US Local News Articles
 
-# 1. About 
+## 1. About 
 We present 3DLNews, a novel dataset with local news articles from the United States spanning the period from 1996 to 2024. It contains almost 1 million URLs (and HTML text) from over 14,000 local newspapers, TV, and radio stations across all 50 states, and provides a broad snapshot of the US local news landscape. The dataset was collected by scraping Google and Twitter search results. We employed a multi-step filtering process to remove non-news article links and enriched the dataset with metadata such as the names and geo-coordinates of the source news media organizations, article publication dates, etc. Furthermore, we demonstrated the utility of 3DLNews by outlining four applications.
   
 To cite, kindly use:
@@ -18,9 +18,9 @@ To cite, kindly use:
   ```
   git clone https://github.com/GANGANI/3DLNews.git
   ```
-# 2. 3DL News Dataset
+## 2. 3DL News Dataset
 
-## 2.1 Local news media dataset
+### 2.1 Local news media dataset
 We used an extended version of the Local Memory Project's (LMP) US local news dataset to get the local news media outlets. LMP's dataset consists of the websites of 5,993 local newspapers, 2,539 TV stations, and 1,061 radio stations, primarily extracted from (thepaperboy.com)[thepaperboy.com] in 2016. We extended it by crawling and scraping thepaperboy.com (again), web.archive.org/web/20221203031956/http://www.usnpl.com/, 50states.com, and einpresswire.com/world-media-directory/3/united-states. Table 1 outline the number of local news media outlets that we have used to extract local news articles. The ``broadcast'' type refers to either TV or radio stations, because we could not accurately distinguish them during scraping.
 
 **Table 1:  US local news media dataset.**
@@ -46,7 +46,7 @@ presents the number of links scraped from Google and Twitter for each media type
 | Broadcast   | 164,028       | 100,119       | 264,147       |
 | **Total**   | **1,256,973** | **469,489**   | **1,726,462** |
 
-## 2.2 Data Filtering
+### 2.2 Data Filtering
 
 We removed non-news article links by applying a filtering process outlined below. 
 ```
@@ -69,7 +69,7 @@ Table 3 presents the number of news articles after filtering.
 | Broadcast   | 110,494   | 7,783     | 130,144   |
 | **Total**   | **728,676** | **95,899** | **824,575** |
 
-## 2.3 Data Enrichment 
+### 2.3 Data Enrichment 
 We enhanced the usefulness of the news article URLs in 3DLNews by adding attributes to each URL. Table 4 outlines the complete list of attributes. 
 
 # Table 4: Properties of news article URLs in 3DLNews
@@ -104,10 +104,8 @@ ter or Google) from which the article was scraped.
 Each news article URL, along with its attributes (Table 5) is en-
 capsulated in a JSON object within a single line in a file in 3DLNews
 
-# 3DLNews Dataset Structure
+# Data Format
 
-The structure of the 
-```
 - The structure of the dataset is as follows.
   ```
   ├── Google
