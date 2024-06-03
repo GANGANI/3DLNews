@@ -89,20 +89,6 @@ We enhanced the usefulness of the news article URLs in 3DLNews by adding attribu
 | response_code     | Response code returned following GET request of link.                                                                                                      | `200`                                                 |
 | expanded_url      | Final target URL for links that redirect.                                                                                                                  | `None`          |
 
-Next, we highlight a few.
-The link represents the news article URL. The html_filename
-attribute points to the file containing the HTML text of news arti-
-cle, while the publication_date refers to the article publication date
-which was extracted using htmldate [3]. The location property of
-each URL includes the US state, city, and latitude/longitude of the
-source news media organization. The media_metadata contains in-
-formation (e.g., newspaper or TV or radio name) about the news me-
-dia website where the article was published. The source_metadata
-includes information (e.g., search query link) about the source (Twit-
-ter or Google) from which the article was scraped.
-Each news article URL, along with its attributes (Table 5) is en-
-capsulated in a JSON object within a single line in a file in 3DLNews
-
 # Data Format
 
 - The structure of the dataset is as follows.
@@ -156,30 +142,19 @@ capsulated in a JSON object within a single line in a file in 3DLNews
       ├── 3-TV
       └── 4-Broadcast
   ```
-The directory named 'Google' contains JSONL files with news article URLs extracted via Google scraping. Each JSONL file represents a collection of URLs and their associated metadata gathered through automated searches on Google. The directory named 'Twitter' holds JSONL files with news article URLs obtained through Twitter scraping. Each JSONL file includes URLs and metadata collected from tweets, providing a diverse set of news articles shared on the Twitter platform.
+The Google directory contains JSONL files with news article URLs extracted through Google scraping. Each JSONL file represents a collection of URLs and their associated metadata gathered from automated searches on Google.
 
-Inside each Twitter and Google directories, it has 4 main directories for each news media type. Then inside the each media type folder it has for main directories as explained below.
-- **state:** This directory contains the scarped data for each state for each year.
-- **preprocessed_data:** This folder has set of directories for each state and inside that it has set of jsonl.gz files for each year. inside that Jsonl file it has data objects for each URL.
-- **filtered_data:**  
-##  
-**Table:** US local news media dataset** his folder has set of directories for each state and inside that it has filtered article URLs.
-**HTML:** This folder has the HTML content for each of the article named with the hash value of each article URL.
+The Twitter directory holds JSONL files with news article URLs obtained via Twitter scraping. Each JSONL file includes URLs and metadata collected from tweets, providing a diverse set of news articles shared on the Twitter platform.
 
+Within both the Twitter and Google directories, there are four main directories for each news media type. Inside each media type folder, the following main directories are included:
 
+**state:** Contains scraped data for each state for each year.
+**preprocessed_data:** Contains directories for each state. Within each state directory, there are JSONL.GZ files for each year, which include data objects for each URL.
+**filtered_data:** Contains directories for each state with filtered article URLs.
+**HTML:** Contains the HTML content for each article, named with the hash value of each article URL.
 
-
-
-
-
-
-
-### Key Features
-- **Time Span:** Articles from 1996 to 2024, offering a nearly three-decade perspective on local news.
-- **Geographical Coverage:** Nearly 1 million URLs sourced from more than 10,000 local news outlets across all 50 states.
-- **Metadata Enrichment**: The dataset includes relevant metadata to provide additional context for analysis.
   
-### Potential Applications.
+### 3. Potential Applications.
 - Exploring the Nationalization of Local News
 - Media Bias Analysis
 - Studying US Local News Deserts
