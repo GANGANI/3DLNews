@@ -14,7 +14,7 @@ To cite, kindly use:
 }
 ```
 
-- Clone this repository to your local machine using git clone.
+Clone this repository to your local machine using git clone.
   ```
   git clone https://github.com/GANGANI/3DLNews.git
   ```
