@@ -72,7 +72,7 @@ Table 3 presents the number of news articles after filtering.
 ### 2.3 Data Enrichment 
 We enhanced the usefulness of the news article URLs in 3DLNews by adding attributes to each URL. Table 4 outlines the complete list of attributes. 
 
-# Table 4: Properties of news article URLs in 3DLNews
+** Table 4: Properties of news article URLs in 3DLNews**
 
 | Property          | Description                                                                                                                                               | Example                                               |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|
